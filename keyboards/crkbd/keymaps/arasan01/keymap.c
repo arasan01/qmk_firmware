@@ -28,11 +28,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        KC_TAB,    JP_Q,    JP_W,    JP_E,    JP_R,    JP_T,                         JP_Y,    JP_U,    JP_I,    JP_O,   JP_P,  KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL,    JP_A,    JP_S,    JP_D,    JP_F,    JP_G,                         JP_H,    JP_J,    JP_K,    JP_L, JP_MINS,   JP_AT,
+      KC_LGUI,    JP_A,    JP_S,    JP_D,    JP_F,    JP_G,                         JP_H,    JP_J,    JP_K,    JP_L, JP_MINS,   JP_AT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,    JP_Z,    JP_X,    JP_C,    JP_V,    JP_B,                         JP_N,    JP_M, JP_COMM,  JP_DOT, JP_SLSH, JP_BSLS,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                        KC_LGUI, MOMHE(1),  KC_SPC,     KC_ENT, MOHEN(2), KC_RALT
+                                        KC_LCTL, MOMHE(1),  KC_SPC,     KC_ENT, MOHEN(2), KC_RALT
                                     //`---------------------------'  `----------------------------'
 
   ),
@@ -41,35 +41,35 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        KC_ESC,    JP_1,    JP_2,    JP_3,    JP_4,    JP_5,                         JP_6,    JP_7,    JP_8,    JP_9,    JP_0, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL, XXXXXXX, KC_HOME,   KC_UP,  KC_END, KC_PGUP,                       KC_INS, KC_HOME,   KC_UP,  KC_END, XXXXXXX, KC_PGUP,
+      KC_LGUI, XXXXXXX, KC_HOME,   KC_UP,  KC_END, KC_PGUP,                       KC_INS, KC_HOME,   KC_UP,  KC_END, XXXXXXX, KC_PGUP,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN,                      XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, KC_PGDN,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI, _______,  KC_SPC,     KC_ENT,   MO(3), KC_RALT
+                                          KC_LCTL, _______,  KC_SPC,     KC_ENT,   MO(3), KC_RALT
                                       //`--------------------------'  `--------------------------'
   ),
 
   [2] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB, XXXXXXX, XXXXXXX, JP_EXLM, JP_PIPE,  JP_GRV,                      JP_ASTR, JP_LCBR, JP_RCBR, JP_CIRC, XXXXXXX,  KC_DEL,
+       KC_TAB, XXXXXXX, XXXXXXX, JP_PIPE, JP_EXLM,  JP_GRV,                      JP_ASTR, JP_LPRN, JP_RPRN, JP_CIRC, XXXXXXX,  KC_DEL,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL, XXXXXXX, XXXXXXX,  JP_DLR, JP_TILD, JP_DQUO,                      JP_PLUS, JP_LPRN, JP_RPRN, JP_COLN, JP_SCLN, XXXXXXX,
+      KC_LGUI, XXXXXXX, XXXXXXX, JP_TILD,  JP_DLR, JP_DQUO,                      JP_PLUS, JP_LCBR, JP_RCBR, JP_COLN, JP_SCLN, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, XXXXXXX, XXXXXXX, JP_PERC, JP_AMPR, JP_QUOT,                       JP_EQL, JP_LBRC, JP_RBRC, JP_HASH,  JP_YEN, XXXXXXX,
+      KC_LSFT, XXXXXXX, XXXXXXX, JP_AMPR, JP_PERC, JP_QUOT,                       JP_EQL, JP_LBRC, JP_RBRC, JP_HASH,  JP_YEN, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI,   MO(3),  KC_SPC,     KC_ENT, _______, KC_RALT
+                                          KC_LCTL,   MO(3),  KC_SPC,     KC_ENT, _______, KC_RALT
                                       //`--------------------------'  `--------------------------'
   ),
 
   [3] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      KC_TAB,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_BTN4, KC_BTN3, KC_BTN5, KC_BTN7,  KC_DEL,
+      KC_TAB,    KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                        KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_DEL,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL, XXXXXXX, XXXXXXX, KC_WH_U, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_BTN1, KC_MS_U, KC_BTN2, KC_BTN6, XXXXXXX,
+      KC_LGUI, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX,  KC_F11,  KC_F12, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, XXXXXXX, KC_WH_L, KC_WH_D, KC_WH_R, XXXXXXX,                      XXXXXXX, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN8, XXXXXXX,
+      KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI, _______,  KC_SPC,     KC_ENT, _______, KC_RALT
+                                          KC_LCTL, _______,  KC_SPC,     KC_ENT, _______, KC_RALT
                                       //`--------------------------'  `--------------------------'
   )
 };
