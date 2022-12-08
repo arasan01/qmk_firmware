@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <stdio.h>
 
 #define MOHEN(x) LT(x, JP_HENK)
-#define MOMHE(x) LT(x, JP_MHEN)
+#define MOMHE(x) LT(x,  JP_MHEN)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_split_3x6_3(
